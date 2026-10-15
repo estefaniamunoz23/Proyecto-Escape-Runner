@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Runner</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/visual/">Visual del juego</a>
+    </nav>
+
+    <div class="contenedor">
+        <h1>Escape Runner</h1>
+
+        <img src="{% static 'img/principal.jpeg' %}" alt="Titulo del juego">
+
+        <button class="boton" onclick="mostrarMensaje()">Ver mensaje</button>
+
+        <h2>¿De qué se trata?</h2>
+        <p>
+            Escape Runner es un juego del género endless runner y acción.
+            El jugador controla a Alex, una chica que debe escapar de un
+            laboratorio abandonado mientras esquiva obstáculos y recolecta
+            baterías para sobrevivir el mayor tiempo posible.
+        </p>
+
+        <p>
+            El personaje corre automáticamente y el jugador debe saltar,
+            deslizarse, esquivar obstáculos y recolectar baterías para
+            mantener su energía.
+        </p>
+
+        <h2>Etapa del desarrollo</h2>
+        <p>El desarrollo del juego se encuentra al 100%.</p>
+        <p>El juego está terminado y se encuentra en la etapa final del desarrollo.</p>
+
+        <h2>¿Dónde se está desarrollando?</h2>
+        <p>
+            Escape Runner se está desarrollando utilizando Godot Engine,
+            un motor de desarrollo de videojuegos utilizado para crear
+            principalmente juegos 2D.
+        </p>
+
+        <h2>Información del juego</h2>
+        <ul>
+            <li>Nombre: Escape Runner</li>
+            <li>Género: Endless Runner / Acción</li>
+            <li>Plataforma: PC</li>
+            <li>Perspectiva: 2D lateral</li>
+            <li>Jugadores: 1</li>
+            <li>Motor utilizado: Godot Engine</li>
+            <li>Estado del desarrollo: 100% terminado</li>
+        </ul>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

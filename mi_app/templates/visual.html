@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visual del juego</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/visual/">Visual del juego</a>
+    </nav>
+
+    <div class="contenedor">
+        <h1>Visual del juego</h1>
+        <p>En esta página se muestran algunas partes visuales de Escape Runner.</p>
+
+        <h2>Pantalla del juego</h2>
+        <img src="{% static 'img/escenario.jpeg' %}" alt="Pantalla del juego">
+        <p>Esta imagen muestra una parte de la pantalla principal del juego y cómo se ve durante la partida.</p>
+
+        <h2>Personaje</h2>
+        <img src="{% static 'img/alex.jpeg' %}" alt="Personaje">
+        <p>En esta imagen se puede observar al personaje.</p>
+
+        <h2>Robot Centinela</h2>
+        <img src="{% static 'img/centinela.jpeg' %}" alt="Robot centinela">
+        <p>Esta imagen muestra otra parte del juego, donde se pueden ver elementos del escenario y la jugabilidad.</p>
+
+        <p><a href="/">Volver a la página principal</a></p>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

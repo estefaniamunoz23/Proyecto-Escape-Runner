@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eeeeee;
+    color: #222;
+}
+
+nav {
+    background: #222;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+.boton {
+    padding: 8px 15px;
+    cursor: pointer;
+}
