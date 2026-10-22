@@ -1,0 +1,13 @@
+{% extends 'app1/componentes/plantillaP.html' %}
+{% block titulo %}Información | Escape Runner{% endblock %}
+{% block contenido %}
+<h1>Información del proyecto</h1>
+<p>Esta página presenta información general sobre el desarrollo de Escape Runner.</p>
+<section class="tarjeta">
+    <h2>Objetivo</h2>
+    <p>Crear un videojuego 2D de acción en el que el jugador deba evitar obstáculos y mantenerse en movimiento.</p>
+    <h2>Herramientas</h2>
+    <p>El videojuego se desarrolla con Godot Engine. Esta página web utiliza HTML, CSS, JavaScript y Django.</p>
+    <button class="boton" type="button" onclick="mostrarMensaje()">Mostrar mensaje</button>
+</section>
+{% endblock %}

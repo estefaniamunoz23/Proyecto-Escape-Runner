@@ -1,37 +1,24 @@
+{% extends 'app1/componentes/plantillaP.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Visual del juego</title>
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
-</head>
-<body>
-
-    <nav>
-        <a href="/">Inicio</a>
-        <a href="/visual/">Visual del juego</a>
-    </nav>
-
-    <div class="contenedor">
-        <h1>Visual del juego</h1>
-        <p>En esta página se muestran algunas partes visuales de Escape Runner.</p>
-
-        <h2>Pantalla del juego</h2>
-        <img src="{% static 'img/escenario.jpeg' %}" alt="Pantalla del juego">
-        <p>Esta imagen muestra una parte de la pantalla principal del juego y cómo se ve durante la partida.</p>
-
-        <h2>Personaje</h2>
-        <img src="{% static 'img/alex.jpeg' %}" alt="Personaje">
-        <p>En esta imagen se puede observar al personaje.</p>
-
-        <h2>Robot Centinela</h2>
-        <img src="{% static 'img/centinela.jpeg' %}" alt="Robot centinela">
-        <p>Esta imagen muestra otra parte del juego, donde se pueden ver elementos del escenario y la jugabilidad.</p>
-
-        <p><a href="/">Volver a la página principal</a></p>
-    </div>
-
-    <script src="{% static 'js/script.js' %}"></script>
-</body>
-</html>
+{% block titulo %}Visual del juego | Escape Runner{% endblock %}
+{% block contenido %}
+<h1>Visual del juego</h1>
+<p>Estas imágenes muestran algunos elementos y personajes de Escape Runner.</p>
+<div class="galeria">
+    <article class="tarjeta">
+        <h2>Escenario</h2>
+        <img src="{% static 'mi_app/img/escenario.jpeg' %}" alt="Escenario del juego">
+        <p>Una parte del laboratorio en el que transcurre la aventura.</p>
+    </article>
+    <article class="tarjeta">
+        <h2>Personaje principal</h2>
+        <img src="{% static 'mi_app/img/alex.jpeg' %}" alt="Alex, personaje principal">
+        <p>Alex es la protagonista y debe escapar del laboratorio.</p>
+    </article>
+    <article class="tarjeta">
+        <h2>Robot centinela</h2>
+        <img src="{% static 'mi_app/img/centinela.jpeg' %}" alt="Robot centinela">
+        <p>Un enemigo que forma parte de los peligros del juego.</p>
+    </article>
+</div>
+{% endblock %}

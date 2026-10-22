@@ -1,0 +1,13 @@
+{% extends 'app1/componentes/plantillaP.html' %}
+{% block titulo %}Mecánicas | Escape Runner{% endblock %}
+{% block contenido %}
+<h1>Mecánicas del juego</h1>
+<p>Durante la partida, el jugador debe reaccionar rápidamente para evitar los peligros del laboratorio.</p>
+<div class="tarjetas">
+    <article class="tarjeta"><h2>Saltar</h2><p>Permite superar obstáculos que se encuentran en el suelo.</p></article>
+    <article class="tarjeta"><h2>Deslizarse</h2><p>Permite pasar por debajo de obstáculos ubicados a poca altura.</p></article>
+    <article class="tarjeta"><h2>Esquivar</h2><p>Hay que observar el escenario y evitar chocar con los peligros.</p></article>
+    <article class="tarjeta"><h2>Sobrevivir</h2><p>El objetivo es avanzar todo lo posible sin perder la partida.</p></article>
+</div>
+<p><a class="boton" href="{% url 'visual' %}">Ver imágenes del juego</a></p>
+{% endblock %}
